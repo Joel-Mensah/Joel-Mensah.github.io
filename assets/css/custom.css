@@ -29,16 +29,19 @@
 }
 
 /* Global Reset & Base */
+* {
+    font-family: var(--font-body) !important;
+}
+
 body {
     background-color: var(--dark-bg);
     color: var(--text-muted);
-    font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-p {
-    color: var(--text-main) !important;
+p, span, li, a, input, textarea, button, select {
+    font-family: var(--font-body) !important;
 }
 
 h1,
@@ -46,10 +49,18 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: var(--font-heading);
+h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.brand-title,
+.nav-link,
+.header-title,
+.header-subtitle {
+    font-family: var(--font-heading) !important;
     color: var(--text-main);
-    font-weight: 700;
+}
+
+p {
+    color: var(--text-main) !important;
 }
 
 .text-danger {
