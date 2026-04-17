@@ -548,7 +548,71 @@ p {
     color: white;
 }
 
-/* Footer */
+/* Skills Section */
+.skills-section h4 {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.skills-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+.skill-item {
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateX(5px);
+}
+
+.skill-item h6 {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: var(--text-main);
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress {
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: visible;
+}
+
+.progress-bar {
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(255, 72, 0, 0.3);
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 72, 0, 0.5);
+}
+
+/* Footer & Other */
 .footer {
     background-color: #0f172a;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
