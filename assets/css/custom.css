@@ -29,6 +29,13 @@
 }
 
 /* Global Reset & Base */
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-muted);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
 body, p, span, li, a, input, textarea, button, select, div:not(.fa):not(.ti):not([class^="ti-"]):not([class^="fa-"]) {
     font-family: var(--font-body);
 }
